@@ -1,0 +1,18 @@
+nav {
+  background-color: #000;
+}
+
+.nav-item button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+div.modal-footer a {
+  color: gold;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+div.modal-footer a:hover {
+  transform: scale(1.1);
+}

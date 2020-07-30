@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+.login,
+.signup,
+.reset-password {
+  background: rgb(119, 116, 116);
+  background: radial-gradient(
+    circle,
+    rgba(119, 116, 116, 1) 0%,
+    rgba(24, 23, 23, 1) 81%
+  );
+  height: 100%;
+  min-height: 100vh;
+  color: whitesmoke;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.login-form-container,
+.signup-form-container,
+.reset-password-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-form-container button,
+.login-btn,
+.signup-form-container button,
+.reset-password-btn {
+  background-color: transparent;
+  border: 1px solid #000;
+  margin-right: 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.2rem;
+  color: whitesmoke;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+.login-form-container button:hover,
+.signup-form-container button:hover,
+.login-btn:hover,
+.reset-password-btn:hover {
+  border: 1px solid whitesmoke;
+  color: gold;
+}
+
+.login-form-container form,
+.signup-form-container form,
+.reset-password-form-container form {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3rem;
+}
+
+.login-form-container p {
+  color: #d3d3d3;
+}
+
+.login-form-container p a,
+.success-msg {
+  color: gold;
+  font-size: 0.75rem;
+}
+
+.error {
+  color: gold;
+  text-align: center;
+}
+
+.login-form-container .error {
+  color: gold;
+}

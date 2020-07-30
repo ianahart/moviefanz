@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+.movies {
+  background: rgb(119, 116, 116);
+  background: radial-gradient(
+    circle,
+    rgba(119, 116, 116, 1) 0%,
+    rgba(24, 23, 23, 1) 81%
+  );
+  height: 100%;
+  min-height: 100vh;
+  color: whitesmoke;
+}
+
+.showcase {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.divider {
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+.divider h3,
+.movie-search h3 {
+  letter-spacing: 0.115rem;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.movie-search h3 {
+  text-align: center;
+}
+
+.movie-search h4 {
+  color: gold;
+  text-align: center;
+}
+
+.showcase-buttons button {
+  background-color: transparent;
+  border: 1px solid #000;
+  margin-right: 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.2rem;
+  color: whitesmoke;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+.showcase-buttons button:hover {
+  border: 1px solid whitesmoke;
+  color: gold;
+}
+
+.favorites-button {
+  font-size: 0.75rem;
+}
+
+.showcase-buttons button:last-child {
+  margin-right: 0;
+}
+
+.movie-poster {
+  width: 100%;
+}
+
+.showcase-movies,
+.search-movies {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.showcase-movie,
+.search-movie {
+  justify-self: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  text-align: center;
+  width: 50%;
+}
+
+.latest-movie {
+  text-align: center;
+  grid-column: 1/ 4;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1200px) {
+  .showcase-movies,
+  .search-movies {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .showcase-movies,
+  .search-movies {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .showcase-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .showcase-buttons button {
+    margin: 0 1rem;
+  }
+
+  .showcase-buttons button:last-child {
+    margin: 0 1rem;
+  }
+}

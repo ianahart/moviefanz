@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+.show-movie {
+  background: rgb(119, 116, 116);
+  background: radial-gradient(
+    circle,
+    rgba(119, 116, 116, 1) 0%,
+    rgba(24, 23, 23, 1) 81%
+  );
+  height: 100%;
+  min-height: 100vh;
+  color: whitesmoke;
+}
+
+.movie {
+  text-align: center;
+  padding-top: 3rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  padding-bottom: 4rem;
+}
+
+.movie p {
+  margin: 0;
+}
+
+.movie p span {
+  color: gold;
+}
+.image-container {
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.movie .vote-average {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: 2px solid gold;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 0.115rem;
+}
+
+.movie .tagline {
+  width: 300px;
+  margin: 0 auto;
+  color: gold;
+}
+
+.movie .line {
+  background-color: whitesmoke;
+  height: 3px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.movie .poster {
+  width: 350px;
+}
+
+.movie .genres {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.movie .overview {
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.left-arrow-container i {
+  color: gold;
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  left: -60px;
+  top: 170px;
+}
+
+.left-arrow-container i:hover {
+  color: whitesmoke;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .left-arrow-container i {
+    left: 0;
+    top: 0;
+  }
+}

@@ -1,0 +1,13 @@
+.remove-button {
+  position: absolute;
+  font-size: 2rem;
+  right: 0;
+  cursor: pointer;
+  color: whitesmoke;
+  transition: all 0.5s ease-in-out;
+}
+
+.remove-button:hover {
+  color: gold;
+  transform: scale(1.1);
+}

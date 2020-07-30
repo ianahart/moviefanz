@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+.popular {
+  background: rgb(119, 116, 116);
+  background: radial-gradient(
+    circle,
+    rgba(119, 116, 116, 1) 0%,
+    rgba(24, 23, 23, 1) 81%
+  );
+  height: 100%;
+  min-height: 100vh;
+  color: whitesmoke;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.popular h1 {
+  text-align: center;
+}
+
+.line {
+  height: 3px;
+  background: rgb(245, 245, 245);
+  background: linear-gradient(
+    90deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(212, 175, 55, 1) 81%
+  );
+  width: 40%;
+  margin: 0 auto;
+}
+
+.popular-movies {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.popular-movie {
+  justify-self: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  text-align: center;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.popular-movie h2 {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.movie-poster {
+  width: 100%;
+}
+
+.popularity {
+  margin: 0;
+  padding: 0;
+}
+
+.popularity span,
+.votes span {
+  color: gold;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1200px) {
+  .popular-movies {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .popular-movies {
+    grid-template-columns: 1fr 1fr;
+  }
+}

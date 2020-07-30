@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+.favorites {
+  background: rgb(119, 116, 116);
+  background: radial-gradient(
+    circle,
+    rgba(119, 116, 116, 1) 0%,
+    rgba(24, 23, 23, 1) 81%
+  );
+  height: 100%;
+  min-height: 100vh;
+  color: whitesmoke;
+}
+
+.favorites h1 {
+  font-family: 'Noto Sans KR', sans-serif;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.helpful-text {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+}
+
+.helpful-text span a {
+  color: gold;
+  font-size: 1.2rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: italic;
+}
+
+.favorite-movies {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.favorite-movie {
+  justify-self: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  text-align: center;
+  width: 50%;
+  position: relative;
+}
+
+.movie-poster {
+  width: 350px;
+}
+
+h2 {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media only screen and (min-width: 1200px) {
+  .favorite-movies {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .favorite-movies {
+    grid-template-columns: 1fr 1fr;
+  }
+}
