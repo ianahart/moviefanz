@@ -11,6 +11,7 @@ import Favorites from '../Favorites';
 import Popular from '../Popular';
 import Movies from '../Movies';
 import ShowMovie from '../ShowMovie';
+import NotFound from '../NotFound';
 
 class Navigation extends React.Component {
   render() {
@@ -55,6 +56,7 @@ class Navigation extends React.Component {
         />
         <Route path="/movies/:id" exact component={ShowMovie} />
         <Route path="/about" exact component={About} />
+        <Route path="*" component={NotFound} />
       </Switch>
     );
   }
